@@ -229,3 +229,14 @@ Un ejemplo base es el siguiente, para ver otros ir a **[command.js]**:
 ```js
 
 ```
+
+## Singleton:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[singleton.js]**:
+
+[singleton.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/singleton.js
+
+```js
+
+```
