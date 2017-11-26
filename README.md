@@ -18,3 +18,5 @@ Pondre ejemplos base de cada patron y agregados por mi.
 - Middleware
 - Command
 
+La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma.
+
