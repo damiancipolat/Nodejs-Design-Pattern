@@ -20,6 +20,8 @@ Pondre ejemplos base de cada patron y agregados por mi.
 
 La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma, es es debido a que en este lenguaje predominan más los conceptos de la programación funcional que de la programación orientada a objetos.
 
+Voy adaptar los ejemplos de codigo js del libro al estandar ES6.
+
 ## Factory:
 > Una fabrica nos permite separarm la creación dew un objeto de su implementación, esencialmente, la fabrica encapsula la creación de una nueva instancia, dandonos más flexibilidad y control en la manera de que hacemos esto.
 
@@ -95,8 +97,8 @@ El proxy y el sujeto llamado tienen una interaz identica y estos nos permite tra
 intercerpta todas o algunas operaciones que se pretenden ejecutar al objeto sujeto.
 
 Podemos considerar usar proxy para estos ejemplos:
-- Data validation: The proxy validates the input before forwarding it to the subject.
-- Security: The proxy verifies that the client is authorized to perform the operation and it passe.
+- Valiadación de datos: El proxy valida la entrada antes de enviarla al sujeto.
+- Seguridad: El proxu verifica que el cliente este autorizado a realizar una operación al sujeto antes de pasarselo.
 - Caching: The proxy keeps an internal cache so that the operations are executed on the subject only if the data is not yet present in the cache.
 - Lazy initialization: If the creation of the subject is expensive, the proxy can delay it to when it's really necessary.
 - Logging: The proxy intercepts the method invocations and the relative parameters, recoding them as they happen.
