@@ -145,3 +145,19 @@ console.log(proxy.hello());
 console.log(proxy.goodbye());
 
 ```
+
+## Decorator:
+> Decorator es un patron estructural, consiste en aumentar dinamicamente el comportamiento de un objeto existente.
+Es diferente de la herencia claisca, por que el comportamiento no es agregado a todos los objetos de la misma clase.
+
+La implementación es muy similar al patron proxy, pero en lugar de mejorar o modificar el comportamiento de la interfaz existente del objeto, este incrementea con nuevas funcionaliodades.
+
+Un ejemplo base es el siguiente, para ver otros ir a **[decorator.js]**:
+
+[decorator.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/decorator.js
+
+```js
+
+
+
+```
