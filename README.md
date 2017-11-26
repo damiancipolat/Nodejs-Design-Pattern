@@ -23,7 +23,7 @@ La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, per
 ## Factory:
 > Una fabrica nos permite separarm la creación dew un objeto de su implementación, esencialmente, la fabrica encapsula la creación de una nueva instancia, dandonos más flexibilidad y control en la manera de que hacemos esto.
 
-Para ver más ejemplos **[factory.js]**:
+Un ejemplo base es el siguiente, para ver otros ir a **[factory.js]**:
 
 [factory.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/factory.js
 
