@@ -98,11 +98,11 @@ intercerpta todas o algunas operaciones que se pretenden ejecutar al objeto suje
 
 Podemos considerar usar proxy para estos ejemplos:
 - Valiadación de datos: El proxy valida la entrada antes de enviarla al sujeto.
-- Seguridad: El proxu verifica que el cliente este autorizado a realizar una operación al sujeto antes de pasarselo.
-- Caching: The proxy keeps an internal cache so that the operations are executed on the subject only if the data is not yet present in the cache.
+- Seguridad: El proxy verifica que el cliente este autorizado a realizar una operación al sujeto antes de pasarselo.
+- Cache: El proxy mantiene una cache interna de las operaciones ejecutadas en el sujeto, la operación es ejecutada si no se encuentra en la cache.
 - Lazy initialization: If the creation of the subject is expensive, the proxy can delay it to when it's really necessary.
-- Logging: The proxy intercepts the method invocations and the relative parameters, recoding them as they happen.
-- Remote objects: A proxy can take an object that is located remotely, and make it appear local.
+- Logeo: El proxy intercepta la invocación a metodos del sujeto y graba los parametros de entrada y las salidas.
+- Objetos remotos: El proxy puede tomar el objeto que esta ubicado remotamente y lo hace aparecer como si fuera local.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[proxy.js]**:
 
@@ -110,5 +110,38 @@ Un ejemplo base es el siguiente, para ver otros ir a **[proxy.js]**:
 
 ```js
 
+class subject{
+
+  hello(){
+    return 'hello';
+  }
+
+  goodbye(){
+    return 'Goodbye people!';
+  }
+
+}
+
+class Proxy(subject){
+
+  constructor(subject){
+    this.subject = subject;
+  }
+
+  hello(){
+    return this.subject.hello()+' world!';
+  }
+
+  goodbye(){
+    return this.subject.goodbye();
+  }
+
+}
+
+let tmpsubj = new subject();
+let proxy   = new Proxy(tmpsubj);
+
+console.log(proxy.hello());
+console.log(proxy.goodbye());
 
 ```
