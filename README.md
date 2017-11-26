@@ -207,3 +207,25 @@ Un ejemplo base es el siguiente, para ver otros ir a **[template.js]**:
 ```js
 
 ```
+
+## Middleware:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[middleware.js]**:
+
+[middleware.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/middleware.js
+
+```js
+
+```
+
+## Command:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[command.js]**:
+
+[command.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/command.js
+
+```js
+
+```
