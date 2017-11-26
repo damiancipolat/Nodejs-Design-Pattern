@@ -1,20 +1,39 @@
-function decorate(component) {
+class person(){
 
- var proto = Object.getPrototypeOf(component);
+  hello(){
+    return 'hello world';
+  }
 
- function Decorator(component) {
- this.component = component;
- }
- 
- Decorator.prototype = Object.create(proto);
-  Decorator.prototype.greetings = function() {
- //...
- };
+  greetings(){
+    return 'greetings people';
+  }
 
- //delegated method
- Decorator.prototype.hello = function() {
- this.component.hello.apply(this.component, arguments);
- };
-
- return new Decorator(component);
 }
+
+class personDecorator{
+
+  constructor(component){
+    this.component = component;
+  }
+
+  hello(){
+    return this.component.hello();
+  }
+
+  greetings(){
+    return this.component.greetings();
+  }
+
+  jump(){
+    return this.component.hello() + this.component.greetings();
+  }
+
+}
+
+let damian      = new person();
+let decorPeople = new personDecorator(damian);
+
+damian.hello();
+damian.greetings();
+
+console.log(damian.jump());
