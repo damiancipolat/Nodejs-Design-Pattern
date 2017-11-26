@@ -94,6 +94,14 @@ console.log(damian);
 El proxy y el sujeto llamado tienen una interaz identica y estos nos permite trabajar trasparentemente con el,
 intercerpta todas o algunas operaciones que se pretenden ejecutar al objeto sujeto.
 
+Podemos considerar usar proxy para estos ejemplos:
+- Data validation: The proxy validates the input before forwarding it to the subject.
+- Security: The proxy verifies that the client is authorized to perform the operation and it passe.
+- Caching: The proxy keeps an internal cache so that the operations are executed on the subject only if the data is not yet present in the cache.
+- Lazy initialization: If the creation of the subject is expensive, the proxy can delay it to when it's really necessary.
+- Logging: The proxy intercepts the method invocations and the relative parameters, recoding them as they happen.
+- Remote objects: A proxy can take an object that is located remotely, and make it appear local.
+
 Un ejemplo base es el siguiente, para ver otros ir a **[proxy.js]**:
 
 [proxy.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/proxy.js
