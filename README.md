@@ -158,6 +158,16 @@ Un ejemplo base es el siguiente, para ver otros ir a **[decorator.js]**:
 
 ```js
 
+```
 
+## Adapter:
+> El patron adaptador nos permite acceder a la funcionalidad de un objeto que usa una interfaz diferente.
+Como el nombre nos dice adapta al objeto que usa una interfaz distinta, para que podamos usarlo con una misma interfaz.
+
+Un ejemplo base es el siguiente, para ver otros ir a **[adapter.js]**:
+
+[adapter.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/adapter.js
+
+```js
 
 ```
