@@ -1,5 +1,5 @@
 /*
-	Ejemplo Fabrica de personas
+  Ejemplo Fabrica de personas
 */
 class person{
 
@@ -49,7 +49,7 @@ class personFactory{
 
 }
 
-//Innovación
+//Invocación.
 let fabrica = new personFactory();
 fabrica.setName('Damián');
 fabrica.setSurname('Cipolat');
@@ -61,7 +61,7 @@ let damian = fabrica.build();
 console.log(damian);
 
 /*
-	Ejemplo fabrica de profilers.
+  Ejemplo fabrica de profilers.
 */
 class profiler{
 	
@@ -81,7 +81,7 @@ class profiler{
 	}
 }
 
-//Innovación
+//Invocación.
 if(process.env.NODE_ENV === 'development')	
  return new Profiler(label);
 else{
