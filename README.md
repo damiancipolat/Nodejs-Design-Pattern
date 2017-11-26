@@ -4,6 +4,10 @@ En este repositorio voy a volcar los patrones de diseño obtenidos de la lectura
 
 ![N|Solid](http://damiancipolat.com/webFiles/portada-libro-node-1.png)
 
+Podes descargar el libro desde este repo **[descargar]**:
+[descargar]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/Nodejs_Design_Patterns_1.pdf
+
+
 Pondre ejemplos base de cada patron y agregados por mi.
 
 ## Lista de patrones:
