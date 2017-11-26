@@ -174,7 +174,7 @@ Un ejemplo base es el siguiente, para ver otros ir a **[adapter.js]**:
 
 ## Strategy:
 > El patron strategy permite encapsular un algoritmo en una clase, los cuales tienen la misma interfaz y son
-intercambiables según la situacion. Podemos definir una familia de algormitmos encapsulados en un objeto..
+intercambiables según la situacion. Podemos definir una familia de algormitmos encapsulados en un objeto.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[strategy.js]**:
 
@@ -186,11 +186,45 @@ Un ejemplo base es el siguiente, para ver otros ir a **[strategy.js]**:
 
 ## State:
 > El patron state es una variacón del patron strategy, donde los cambios dependen del estado y hay un algoritmo encapsulado
-que es usando en cada estado..
+que es usando en cada estado.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[state.js]**:
 
 [state.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/state.js
+
+```js
+
+```
+
+## Template:
+> El patron template consiste en definir una clase abstracta que representa el esquelete de un algoritmo donde alguno
+de sus pasos no son definidos, las subclases que lo hereden implementaran estos pasos sin definir.
+
+Un ejemplo base es el siguiente, para ver otros ir a **[template.js]**:
+
+[template.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/template.js
+
+```js
+
+```
+
+## Middleware:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[middleware.js]**:
+
+[middleware.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/middleware.js
+
+```js
+
+```
+
+## Command:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[command.js]**:
+
+[command.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/command.js
 
 ```js
 
