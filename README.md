@@ -6,7 +6,7 @@ En este repositorio voy a volcar los patrones de diseño obtenidos de la lectura
 
 Pondre ejemplos base de cada patron y agregados por mi.
 
-#Lista de patrones:
+## Lista de patrones:
 
 - Factory
 - Proxy
