@@ -183,3 +183,15 @@ Un ejemplo base es el siguiente, para ver otros ir a **[strategy.js]**:
 ```js
 
 ```
+
+## State:
+> El patron state es una variacón del patron strategy, donde los cambios dependen del estado y hay un algoritmo encapsulado
+que es usando en cada estado..
+
+Un ejemplo base es el siguiente, para ver otros ir a **[state.js]**:
+
+[state.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/state.js
+
+```js
+
+```
