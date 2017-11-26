@@ -20,8 +20,12 @@ Pondre ejemplos base de cada patron y agregados por mi.
 
 La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma, es es debido a que en este lenguaje predominan más los conceptos de la programación funcional que de la programación orientada a objetos.
 
-### Factory:
+## Factory:
 > Una fabrica nos permite separarm la creación dew un objeto de su implementación, esencialmente, la fabrica encapsula la creación de una nueva instancia, dandonos más flexibilidad y control en la manera de que hacemos esto.
+
+Para ver más ejemplos **[factory.js]**:
+
+[factory.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/factory.js
 
 ```js
 
