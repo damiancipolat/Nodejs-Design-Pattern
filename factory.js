@@ -1,3 +1,6 @@
+/*
+	Ejemplo Fabrica de personas
+*/
 class person{
 
     constructor(name,surname,age,sex){
@@ -46,6 +49,7 @@ class personFactory{
 
 }
 
+//Innovación
 let fabrica = new personFactory();
 fabrica.setName('Damián');
 fabrica.setSurname('Cipolat');
@@ -55,3 +59,39 @@ fabrica.setSex('M');
 let damian = fabrica.build();
 
 console.log(damian);
+
+/*
+	Ejemplo fabrica de profilers.
+*/
+class profiler{
+	
+	constructor(label){
+		this.label 	  = label;
+		this.lastTime = null;
+	}
+	
+	start(){
+		this.lastTime = process.hrtime();
+	}
+	
+	end(){
+		let dif = process.hrtime(this.lastTime);
+		
+		console.log('Timer "' + this.label + '" took '+ diff[0] + ' seconds and '+ diff[1] + ' nanoseconds.');	
+	}
+}
+
+//Innovación
+if(process.env.NODE_ENV === 'development')	
+ return new Profiler(label);
+else{
+	
+	if(process.env.NODE_ENV === 'production')
+	 return {
+				start: function() {},
+				end: function() {}
+			}
+	else{
+		throw new Error('Must set NODE_ENV');
+	}
+ }
