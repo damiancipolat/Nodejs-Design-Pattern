@@ -1,6 +1,5 @@
-/*
-  Ejemplo base.
-*/
+/*  Ejemplo base  */
+
 class subject{
 
   hello(){
@@ -35,9 +34,54 @@ let proxy   = new Proxy(tmpsubj);
 console.log(proxy.hello());
 console.log(proxy.goodbye());
 
-/*
-  Ejemplo log.
-*/
+/*  Ejemplo Data Validation */
+
+class calculator{
+
+  sumCalc(a,b){
+    return a+b;
+  }
+
+  difCalc(a,b){
+    return a-b;
+  }
+
+}
+
+class validatorCalc{
+
+  constructor(subject){
+    this.subject = subject;
+  }
+
+  sumar(numA,numB){
+
+    if ((typeof numA=="number")&&(typeof numB=="number"))
+      return this.subject.sumCalc(numA,numB);
+    else
+      throw "Parametros no numericos";
+
+  }
+
+  restar(numA,numB){
+
+    if ((typeof numA=="number")&&(typeof numB=="number"))
+      return this.subject.difCalc(numA,numB);
+    else
+      throw "Parametros no numericos";
+
+  }
+
+}
+
+let calculator = new calculator();
+let validator  = new validatorCalc(calculator);
+
+console.log(validator.sumar(2,5));
+console.log(validator.restar(80,5));
+
+
+/*  Ejemplo log  */
 
 function createLoggingWritable(writableOrig) {
 
