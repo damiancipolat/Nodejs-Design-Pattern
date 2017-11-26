@@ -171,3 +171,15 @@ Un ejemplo base es el siguiente, para ver otros ir a **[adapter.js]**:
 ```js
 
 ```
+
+## Strategy:
+> El patron strategy permite encapsular un algoritmo en una clase, los cuales tienen la misma interfaz y son
+intercambiables según la situacion. Podemos definir una familia de algormitmos encapsulados en un objeto..
+
+Un ejemplo base es el siguiente, para ver otros ir a **[strategy.js]**:
+
+[strategy.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/strategy.js
+
+```js
+
+```
