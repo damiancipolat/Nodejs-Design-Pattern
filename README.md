@@ -240,3 +240,14 @@ Un ejemplo base es el siguiente, para ver otros ir a **[singleton.js]**:
 ```js
 
 ```
+
+## Universal:
+> 
+
+Un ejemplo base es el siguiente, para ver otros ir a **[universal.js]**:
+
+[universal.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/universal.js
+
+```js
+
+```
