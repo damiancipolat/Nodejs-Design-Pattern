@@ -105,7 +105,7 @@ Podemos considerar usar proxy para estos ejemplos:
 - **Validación de datos**: El proxy valida la entrada antes de enviarla al sujeto.
 - **Seguridad**: El proxy verifica que el cliente este autorizado a realizar una operación al sujeto antes de pasarselo.
 - **Cache**: El proxy mantiene una cache interna de las operaciones ejecutadas en el sujeto, la operación es ejecutada si no se encuentra en la cache.
-- **Lazy initialization**: If the creation of the subject is expensive, the proxy can delay it to when it's really necessary.
+- **Lazy initialization**: Si la creación del sujeto es muy complicada, el proxy puede frenar esto solo cuando es necesario.
 - **Logeo**: El proxy intercepta la invocación a metodos del sujeto y graba los parametros de entrada y las salidas.
 - **Objetos remotos**: El proxy puede tomar el objeto que esta ubicado remotamente y lo hace aparecer como si fuera local.
 
