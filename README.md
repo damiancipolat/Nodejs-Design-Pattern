@@ -88,3 +88,17 @@ let damian = fabrica.build();
 console.log(damian);
 
 ```
+
+## Proxy:
+> Un proxy es un objeto que controla el acceso a otro llamado sujeto.
+El proxy y el sujeto llamado tienen una interaz identica y estos nos permite trabajar trasparentemente con el,
+intercerpta todas o algunas operaciones que se pretenden ejecutar al objeto sujeto.
+
+Un ejemplo base es el siguiente, para ver otros ir a **[proxy.js]**:
+
+[proxy.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/proxy.js
+
+```js
+
+
+```
