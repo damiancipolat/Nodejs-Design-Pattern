@@ -33,6 +33,7 @@ Pondre ejemplos base de cada patron y agregados por mi.
 [Middleware]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#middleware
 [Command]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#command
 [Singleton]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#singleton
+[Universal]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#universal
 
 La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma, es es debido a que en este lenguaje predominan más los conceptos de la programación funcional que de la programación orientada a objetos.
 
