@@ -470,7 +470,9 @@ articles.forEach((article)=>{
 ```
 
 ## Command:
-> 
+> En su mayor definición genérica, podemos considerar un comando como cualquier objeto que encapsula todo el
+información necesaria para realizar una acción en un momento posterior. Entonces, en lugar de invocar un método o una función directamente, creamos un objeto que representa la intención de realizar tal invocación; será responsabilidad de otro componente
+materializar la intención, transformándola en una acción real.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[command.js]**:
 
