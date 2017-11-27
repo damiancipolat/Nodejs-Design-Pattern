@@ -360,7 +360,40 @@ Un ejemplo base es el siguiente, para ver otros ir a **[template.js]**:
 [template.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/template.js
 
 ```js
+var fs = require('fs');
+var objectPath = require('object-path');
 
+class ConfigTemplate{
+
+  read(file)=>{
+   console.log('Deserializing from ' + file);
+   this.data = this._deserialize(fs.readFileSync(file, 'utf-8'));
+  }
+
+  save(file){
+   console.log('Serializing to ' + file);
+   fs.writeFileSync(file, this._serialize(this.data));    
+  }
+
+  get(path){
+    return objectPath.get(this.data, path);
+  }
+
+  set(path, value){
+    return objectPath.set(this.data, path, value);   
+  }
+
+  _serialize(){
+    throw new Error('_serialize() must be implemented');   
+  }
+
+  _deserialize(){
+     throw new Error('_deserialize() must be implemented');
+ }
+
+}
+
+export default ConfigTemplate;
 ```
 
 ## Middleware:
