@@ -11,17 +11,26 @@ Pondre ejemplos base de cada patron y agregados por mi.
 
 ## Lista de patrones:
 
-- Factory
-- Proxy
-- Decorator
-- Adapter
-- Strategy
-- State
-- Template
-- Middleware
-- Command
-- Singleton
-- Universal
+- **[Factory]**
+- **[Proxy]**
+- **[Decorator]**
+- **[Adapter]**
+- **[Strategy]**
+- **[State]**
+- **[Template]**
+- **[Middleware]**
+- **[Command]**
+- **[Singleton]**
+- **[Universal]**
+
+[Factory]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#factory
+[Proxy]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#proxy
+[Decorator]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#decorator
+[Adapter]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#adapter
+[Strategy]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#strategy
+[State]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#state
+[Template]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#template
+[Middleware]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#middleware
 
 La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma, es es debido a que en este lenguaje predominan más los conceptos de la programación funcional que de la programación orientada a objetos.
 
