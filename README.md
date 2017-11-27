@@ -592,7 +592,18 @@ exports = module.exports = (function () {
 ```
 
 ## Universal:
-> 
+En Node.js, sabemos perfectamente que los módulos CommonJS son los predeterminados
+mecanismo para establecer dependencias entre componentes. La situación en
+el espacio del navegador lamentablemente está mucho más fragmentado:
+
+- Es posible que tengamos un entorno sin ningún sistema de módulos, que significa que los globales son el mecanismo principal para acceder a otros módulos.
+
+- Es posible que tengamos un entorno basado en un Asincrónico Cargador de definición de módulo (AMD), como por ejemplo, RequireJS
+(http://requirejs.org)
+
+- Es posible que tengamoszun entorno que abstraiga el sistema del módulo CommonJS.
+
+Afortunadamente, hay un conjunto de patrones llamado Universal Module Definition (UMD) que puede ayudarnos a abstraer nuestro código del sistema de módulos utilizado en el entorno.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[universal.js]**:
 
