@@ -1,5 +1,61 @@
-/* Ejemplo de filtros */
+/* Ejemplo base */
+class product{
+  constructor(country,price,type){
+    this.country = country;
+    this.prices  = price;
+    this.type    = type;
+  }
+}
 
+const totalTax = 0;
+
+const taxOrigin = (product) =>{
+
+  if (product.country=='ARG')
+    totalTax += 100;
+  else
+    totalTax += 300;
+
+}
+
+const taxPrices = (product) =>{
+
+  if (product.prices>100)
+    totalTax += 80;
+  else
+    totalTax += 200;
+
+}
+
+const taxType = (product)=>{
+
+  if (product.type=='ELECTRO')
+    totalTax += 80;
+
+  if (product.type=='FOOD')
+    totalTax += 280;
+
+  if (product.type=='DRINKS')
+    totalTax += 580;
+
+}
+
+let articles = [new product('ARG',100,'ELECTRO'),
+                new product('USA',400,'FOOD'),
+                new product('EUA',40,'DRINKS')];
+
+let functions = [taxOrigin,taxPrices,taxType];
+
+articles.forEach((article)=>{
+
+  functions.forEach((funcCalc)=>{
+    totalTax += funcCalc(article);
+  });
+
+});
+
+
+/* Ejemplo de filtros */
 const filterAvail=(results,state)=>{
   return results.filter((item)=>item.ida.availability<=parseInt(state.pax));
 }
