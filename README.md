@@ -32,6 +32,7 @@ Pondre ejemplos base de cada patron y agregados por mi.
 [Template]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#template
 [Middleware]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#middleware
 [Command]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#command
+[Singleton]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/README.md#singleton
 
 La forma de escribir estos patrones de diseño no es igual que en JAVA y C#, pero la escencia es la misma, es es debido a que en este lenguaje predominan más los conceptos de la programación funcional que de la programación orientada a objetos.
 
@@ -554,14 +555,40 @@ function run() {
 ```
 
 ## Singleton:
-> 
+> El Singleton es quizás el más sencillo de los patrones que se presentan en el catálogo del GoF (disponible en el libro Patrones de Diseño y analizado previamente en "Patrones y Antipatrones: una introducción"). Es también uno de los patrones más conocidos y utilizados. Su propósito es asegurar que sólo exista una instancia de una clase.
+
+En nodejs los modulos pueden considerarse también como implementaciones del patron singleton.
 
 Un ejemplo base es el siguiente, para ver otros ir a **[singleton.js]**:
 
 [singleton.js]:https://github.com/damiancipolat/Nodejs-Design-Pattern/blob/master/singleton.js
 
 ```js
+exports = module.exports = (function () {
 
+  var instance;
+ 
+  function init() {
+    return {
+
+      extend: function extend(extension, obj){
+        for (var key in extension){
+          obj[key] = extension[key];
+        }
+      }
+    };
+  };
+ 
+  return {
+
+    getInstance: function () {
+      if (!instance) {
+        instance = init();
+      }
+      return instance;
+    }
+  };
+})();
 ```
 
 ## Universal:
