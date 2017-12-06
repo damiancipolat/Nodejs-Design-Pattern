@@ -1,4 +1,5 @@
 # Nodejs-Design-Pattern
+> "Este repositorio esta pensado para que sea más como un resumen de contenidos que alojar proyectos de codígo."
 
 En este repositorio voy a volcar los patrones de diseño obtenidos de la lectura que realize de este libro.
 
